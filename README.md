@@ -6,7 +6,7 @@
 
 ---
 
-## ðŸ“‘ Index
+##  Index
 1. [Project Overview & Goals](#-project-overview--goals)
 2. [Deep Dive into package.json Properties](#-deep-dive-into-packagejson-properties)
 3. [Setup & Running Locally](#-setup--running-locally)
@@ -17,7 +17,7 @@
 
 ---
 
-## ðŸŽ¯ Project Overview & Goals
+##  Project Overview & Goals
 The primary goal of this practical lab is to grasp foundational server-side development in Node.js. This includes:
 - Creating a baseline HTTP server utilizing the built-in `http` core module (`http.createServer`).
 - Transitioning to the `Express.js` framework to understand routing architecture, middleware execution, JSON serialization, and centralized 404 error routing.
@@ -25,7 +25,7 @@ The primary goal of this practical lab is to grasp foundational server-side deve
 
 ---
 
-## âš™ï¸ Deep Dive into `package.json` Properties
+##  Deep Dive into `package.json` Properties
 Running `npm init -y` sets up the project configuration file. Below is an overview of what each key represents:
 
 | Key | Significance |
@@ -43,7 +43,7 @@ Running `npm init -y` sets up the project configuration file. Below is an overvi
 
 ---
 
-## ðŸš€ Setup & Running Locally
+##  Setup & Running Locally
 
 ### Step 1: Environment Requirements
 Ensure **Node.js** (v18+) and **npm** (v9+) are present on your machine.
@@ -81,7 +81,7 @@ STUDENT_SECTION=CSE-2D
 
 ---
 
-## ðŸ›£ï¸ Route Specifications & Scripts
+##  Route Specifications & Scripts
 
 ### Available NPM Scripts
 - `npm start` âž” Executes `node index.js` (Express application).
@@ -98,7 +98,7 @@ STUDENT_SECTION=CSE-2D
 
 ---
 
-## ðŸ“¸ Visual Output & Route Proofs
+##  Visual Output & Route Proofs
 
 ### 1. Native HTTP Server (`http-server.js`)
 Replies with plain text `Hello Vinod Kumar`:
@@ -126,7 +126,7 @@ Graceful catch-all handler for undefined paths:
 
 ---
 
-## ðŸ’¡ Troubleshooting & Key Learnings
+##  Troubleshooting & Key Learnings
 1. **Handling Port Duplication (`EADDRINUSE`)**:
    - *Issue:* Attempting to run both the plain HTTP server and Express at the same time on port `3000` causes an address collision.
    - *Resolution:* Configured fallback binding `const PORT = process.env.PORT || 3000` and terminated the previous background process prior to spinning up another server.
@@ -139,7 +139,7 @@ Graceful catch-all handler for undefined paths:
 
 ---
 
-## ðŸŽ¯ Viva Assessment Q&A
+##  Viva Assessment Q&A
 - **Differentiate between `package.json` and `node_modules`:**
   `package.json` is the configuration blueprint stating metadata, scripts, and package version rules that gets pushed to GitHub. `node_modules` is the local runtime folder storing the downloaded package source files and is intentionally kept out of source control.
 - **Explain the role of `app.listen()`:**
